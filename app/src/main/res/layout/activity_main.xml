@@ -4,50 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f0e68c"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/adyagui"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:scaleType="fitCenter"
         android:src="@drawable/adyagui"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="15dp" />
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <ImageView
-        android:id="@+id/mayo"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:id="@+id/fukidashi"
+        android:layout_width="380dp"
+        android:layout_height="250dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/mayo"
+        android:src="@drawable/fukidashi"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="190dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/denteme"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:scaleType="fitCenter"
-        android:background="@drawable/denteme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="190dp" />
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="特に意味はない\n語源:アーチャークイーン"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/fukidashi"
+        app:layout_constraintTop_toTopOf="@id/fukidashi" />
 
     <ImageView
-        android:id="@+id/babagin"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/babagin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/audio_icon"
+        app:layout_constraintEnd_toEndOf="@id/fukidashi"
+        app:layout_constraintBottom_toBottomOf="@id/fukidashi"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/close_icon"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="15dp" />
+        />
+
+
 
 </android.support.constraint.ConstraintLayout>
